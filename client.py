@@ -1,21 +1,23 @@
-from src.my_math_lib import simple_math_lib
+import src.my_math_lib as math
+
+
 
 def test_str_1():
     try:
-        result = add("3", 4)
+        result = math.add("3", 4)
     except AssertionError:
         assert True
     except:
         assert False
 
 def test_add():
-    result = add(1, 2)
+    result = math.add(1, 2)
     expected_result = 3
 
     print(f"result = {result}")
 
 def test_multiply():
-    result = multiply(3,4)
+    result = math.multiply(3,4)
     expected_result = 12
 
 
